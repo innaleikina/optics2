@@ -18,41 +18,17 @@ body  {
 
 .header {
   background-image: url("../images/glasses-bg.png");
-  height: 30rem;
   background-size: cover;
-  border:1px red solid;
+  background-position:top;
+  /*border:1px red solid;*/
   display: flex;
 }
 
- .flex-container{
+ .navigation{
  width: 960px;
- border:1px red solid;
- justify-content: center;
+ /*border:1px red solid;*/
  height:30rem;
 }
-
-.flex-container>.see {
-  justify-content: flex-end;
-}
-
-.see {
-  font-weight: bold;
-  font-size:2rem;
-  line-height: 1.2;
-  color: black;
-  background-color: white;
-  padding: 1.5rem 5rem;
-  width:
-  border:1px red solid;
-  }
-
-  .see {
-    display: flex;
-    position:relative;
-    margin-top:10rem;
-    border:1px red solid;
-    width:25rem;
-  }
 
 nav {
 color:white;
@@ -75,20 +51,46 @@ padding: 1rem 2rem;
 width:960px;
 justify-content: space-between;
 align-items: center;
-
 }
 
 li {
   margin-right: 2rem;
   display:inline;
-  border: 1px red solid;
+
   }
 
 ul .logos {
   display:flex;
+  width:auto;
 }
-
 
 #logo {
   height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.see {
+  font-weight: bold;
+  font-size:2rem;
+  line-height: 1.2;
+  color: black;
+  background-color: white;
+  padding: 1.5rem 5rem;
+  /*border:1px red solid;*/
+  display: flex;
+  position:relative;
+  margin-top:10rem;
+  
+  }
+
+  .header2,.see {
+    justify-content: flex-end;
+}
+
+.header2 {
+  display: flex;
 }
