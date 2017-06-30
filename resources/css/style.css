@@ -84,7 +84,7 @@ ul .logos {
   display: flex;
   position:relative;
   margin-top:10rem;
-  
+
   }
 
   .header2,.see {
@@ -93,4 +93,49 @@ ul .logos {
 
 .header2 {
   display: flex;
+}
+
+
+
+
+.icons {
+  display:flex;
+  flex-direction: row;
+  /*border:1px red solid;*/
+  justify-content: center;
+  margin-top:3rem;
+}
+
+.delivery,.exams,.custom{
+  display: flex;
+  flex-direction: column;
+  /*border:1px red solid;*/
+  max-height: 8rem;
+}
+
+.exams,.custom {
+margin-right:6rem;
+}
+
+.truckimg,.paperimg,.rulerimg {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+  /*border:1px red solid;*/
+
+}
+
+#paper{
+  max-width:3.5rem;
+}
+
+#truck,#ruler {
+  width:5rem;
+}
+
+.icon,span{
+ /*border:1px red solid;*/
+ text-align:center;
+ display: block;
 }
