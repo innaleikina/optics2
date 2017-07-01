@@ -14,6 +14,7 @@ body  {
 .container{
   max-width: 960px;
   margin: 0 auto;
+  /*border:1px red solid;*/
 }
 
 .header {
@@ -25,7 +26,7 @@ body  {
 }
 
  .navigation{
- width: 960px;
+ max-width: 960px;
  /*border:1px red solid;*/
  height:30rem;
 }
@@ -48,7 +49,7 @@ align-items: center;
 
 ul {
 padding: 1rem 2rem;
-width:960px;
+max-width:960px;
 justify-content: space-between;
 align-items: center;
 }
@@ -63,6 +64,10 @@ ul .logos {
   display:flex;
   width:auto;
 }
+
+.mobile-nav {
+  display:none;
+  }
 
 #logo {
   height: 1.5rem;
@@ -87,8 +92,9 @@ ul .logos {
 
   }
 
-  .header2,.see {
+  .header2,.see{
     justify-content: flex-end;
+
 }
 
 .header2 {
@@ -186,7 +192,7 @@ max-width: 35%;
 footer {
   background-color: azure;
   display: flex;
-/*  border:1px red solid;*/
+  /*border:1px red solid;*/
 }
 
 .footerimg img{
@@ -195,26 +201,38 @@ footer {
   padding-right: 1rem;
 }
 
-.footer {
-/*  border:1px red solid;*/
+ .footer {
+  /*border:1px red solid;*/
   flex-direction: row;
   display: flex;
   margin:4rem;
-}
+  }
+
+  footer .container{
+    width: 960px;
+  }
+
+
+
 
 
 @media only screen and (max-width:1024px){
+
   .container{
     max-width:1024px;
+    border:1px red solid;
   }
 
   nav {
     margin:0 auto;
-    width:1024px;
-  }
+    width:auto;
+    }
+
+
 
   .navigation{
     height:22rem;
+
   }
 
   .see {
@@ -222,5 +240,26 @@ footer {
     margin-top: 5rem;
     padding:0.75rem 4rem;
     margin-right: 2rem;
+    width:auto;
   }
+
+  footer{
+    max-width:1024px;
+  }
+
 }
+
+@media only screen and (max-width:470px){
+  body{
+    max-width:470px;
+  }
+
+.buttons {
+  display:none;
+  }
+
+  .mobile-nav {
+    display:flex;
+    justify-content: center;
+    }
+  }
