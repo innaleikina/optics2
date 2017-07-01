@@ -139,3 +139,65 @@ margin-right:6rem;
  text-align:center;
  display: block;
 }
+
+
+
+#appointments,#philosophy {
+  font-weight: bold;
+  color:white;
+  background-color: cadetblue;
+  font-size: 1rem;
+  width:10rem;
+  padding-left: 1.25rem;
+  /*border:1px red solid;*/
+  margin-bottom:1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+
+}
+
+.info{
+  display:flex;
+  flex-direction: row;
+  margin-top:3rem;
+  /*border:1px red solid;*/
+  flex-wrap: wrap;
+}
+
+.appointments,.philosophy{
+/*border:1px red solid;*/
+flex-direction: column;
+max-width: 35%;
+}
+
+.contact{
+  flex-direction: row;
+  display:flex;
+  justify-content: center;
+  margin-bottom:5rem;
+}
+
+.contact,.philosophy{
+  margin-right:5%;
+}
+
+
+
+footer {
+  background-color: azure;
+  display: flex;
+/*  border:1px red solid;*/
+}
+
+.footerimg img{
+  height:1.5rem;
+  /*border:1px red solid;*/
+  padding-right: 1rem;
+}
+
+.footer {
+/*  border:1px red solid;*/
+  flex-direction: row;
+  display: flex;
+  margin:4rem;
+}
