@@ -5,6 +5,7 @@ html {
 body  {
   font-family: helvetica;
   line-height: 1.4;
+
 }
 
 /*div{
@@ -24,15 +25,15 @@ body  {
   /*border:1px red solid;*/
   width:100%;
   height: 30rem;
+  margin: 0 auto;
 
-  /*display:flex;*/
+  display:flex;
   }
 
   .navigation {
-   margin-top: 1rem;
-   width:960px;
+    width:960px;
     justify-content: space-between;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
   }
 
 
@@ -41,10 +42,7 @@ color:white;
 font-size: 1rem;
 background-color: cadetblue;
 /*border: 1px red solid;*/
-justify-content: space-between;
-margin:0 2rem;
-
-
+margin: 1rem 2rem;
 }
 
 nav ul {
@@ -121,7 +119,7 @@ li {
 .delivery,.exams,.custom{
   display: flex;
   flex-direction: column;
-  /*border:1px red solid;*/
+/*  border:1px red solid;*/
   max-height: 8rem;
 }
 
@@ -231,16 +229,19 @@ footer {
 
   nav {
     margin:0 auto;
-    width:auto;
+    width:100%;
+    /*border:1px red solid;*/
     }
 
  .header{
    height:22rem;
+   /*border:1px red solid;*/
 
  }
 
-.navigation{
-  width:auto;
+.container,.navigation{
+  width:100%;
+  /*border:1px red solid;*/
 }
 
 
@@ -259,7 +260,7 @@ footer {
 }
 
 @media only screen and (max-width:470px){
-  body{
+  .container{
     max-width:470px;
   }
 
@@ -270,5 +271,103 @@ footer {
   .mobile-nav {
     display:flex;
     justify-content: center;
+    /*border:1px red solid*/
+  }
+
+   nav ul {
+
+    width:auto;
+    /*border:1px red solid*/
+  }
+
+  .container,.mobile-nav {
+    width: 100%;
+  /*  border:1px red solid*/
+  }
+
+  ul .mobile-nav {
+    justify-content: flex-end;
+    /*border:1px red solid*/
+  }
+
+  .header{
+    background-position: 20%;
+    height:17rem;
+  }
+
+  #logowords {
+    display: none;
+  }
+
+  .see {
+    justify-content: center;
+    padding:1rem;
+    width:100%;
+    margin-right: 0;
+    /*border:1px red solid;*/
+    margin-top: 9rem;
+   }
+
+   .header2,.see {
+     justify-content: center;
+   }
+
+   .icons {
+     flex-direction: column;
+     /*border:1px red solid;*/
+     margin: 3.77rem auto;
+
     }
+
+    .delivery,.exams,.custom {
+      width:100%;
+     }
+
+     .truckimg,.rulerimg,.papering {
+       margin-top: 1.54rem;
+      }
+
+      .icon,span{
+       font-size:0.77rem;
+      }
+
+     .contact {
+       flex-direction: column;
+       max-width: 100%;
+     }
+
+     .philosophy,.appointments{
+       max-width:100%;
+      /* border:1px red solid;*/
+
+      }
+
+      #philosophy,#appointments {
+        width: 100%;
+        /*border:1px red solid;*/
+      }
+
+      .philosophy,p{
+      width:100%;
+      font-size: .77rem;
+
+      }
+
+      .philosophy {
+      margin-bottom: 4rem;
+      }
+
+      footer span {
+        display: none;
+      }
+
+      footer {
+        display: flex;
+      }
+
+    .footer,.footerimg {
+      justify-content: center;
+      }
+
+
   }
