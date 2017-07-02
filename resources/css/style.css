@@ -14,7 +14,7 @@ body  {
 .container{
   max-width: 960px;
   margin: 0 auto;
-  /*border:1px red solid;*/
+/*  border:1px red solid;*/
 }
 
 .header {
@@ -22,60 +22,65 @@ body  {
   background-size: cover;
   background-position:top;
   /*border:1px red solid;*/
-  display: flex;
-}
+  width:100%;
+  height: 30rem;
 
- .navigation{
- width: 960px;
- /*border:1px red solid;*/
- height:30rem;
-}
+  /*display:flex;*/
+  }
+
+  .navigation {
+   margin-top: 1rem;
+   width:960px;
+    justify-content: space-between;
+    border: 1px solid red;
+  }
+
 
 nav {
 color:white;
 font-size: 1rem;
 background-color: cadetblue;
-margin:1rem 2rem;
 /*border: 1px red solid;*/
-display: flex;
+justify-content: space-between;
+margin:0 2rem;
+
 
 }
 
 nav ul {
-display:inline-flex;
+display:flex;
 align-items: center;
 /*border: 1px red solid;*/
+justify-content: space-between
 }
 
 ul {
 padding: 1rem 2rem;
-width:960px;
-justify-content: space-between;
-align-items: center;
 }
 
 li {
   margin-right: 2rem;
-  display:inline;
+   }
 
-  }
-
-ul .logos {
-  display:flex;
-  width:auto;
-}
 
 .mobile-nav {
   display:none;
   }
 
-#logo {
+.whitelogoimg img{
   height: 1.5rem;
   margin-right: 1rem;
 }
 
-.buttons {
+
+.buttons  {
   display: flex;
+/*  border:1px red solid;*/
+  }
+
+.logo{
+  display:flex;
+/*  border:1px red solid;*/
 }
 
 .see {
@@ -92,14 +97,15 @@ ul .logos {
 
   }
 
+  .header2 {
+    display: flex;
+  }
+
   .header2,.see{
     justify-content: flex-end;
+   }
 
-}
 
-.header2 {
-  display: flex;
-}
 
 
 
@@ -107,7 +113,7 @@ ul .logos {
 .icons {
   display:flex;
   flex-direction: row;
-  /*border:1px red solid;*/
+/*  border:1px red solid;*/
   justify-content: center;
   margin-top:3rem;
 }
@@ -220,7 +226,7 @@ footer {
 
   .container{
     max-width:1024px;
-    border:1px red solid;
+    /*border:1px red solid;*/
   }
 
   nav {
@@ -228,12 +234,15 @@ footer {
     width:auto;
     }
 
+ .header{
+   height:22rem;
 
+ }
 
-  .navigation{
-    height:22rem;
+.navigation{
+  width:auto;
+}
 
-  }
 
   .see {
     font-size:1.33rem;
